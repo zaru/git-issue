@@ -83,7 +83,7 @@ class GitIssue::Github < GitIssue::Base
     or_zero = lambda{|v| v.blank? ? "0" : v }
 
     issues.each do |i|
-      puts sprintf("%s  %s  %s  %s  %s c:%s v:%s p:%s %s %s",
+      puts sprintf("%s\t%s\t%s\t%s\t%s\tc:%s\tv:%s\tp:%s\t%s\t%s",
                    apply_fmt_colors(:id, sprintf('#%-4d', i['number'].to_i)),
                    apply_fmt_colors(:state, i['state']),
                    mljust(i['title'], t_max),
