@@ -69,6 +69,7 @@ class GitIssue::Github < GitIssue::Base
     params = query_names.inject({}){|h,k| h[k] = options[k] if options[k];h}
     params[:state] ||= "open"
     params[:per_page] = options[:max_count] || 30
+    params[:page] = options[:page] || 1
 
     url = to_url("repos", @repo, 'issues')
 

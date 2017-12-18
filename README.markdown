@@ -122,6 +122,7 @@ set user and password of github(for authentication)
       -f, --force                      force create branch
       -v, --verbose                    show issue details
       -n, --max-count=VALUE            maximum number of issues
+          --page=VALUE                 number of pages in the issues
           --oneline                    display short info
           --raw-id                     output ticket number only
           --remote=VALUE               on publish, remote repository to push branch

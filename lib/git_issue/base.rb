@@ -299,6 +299,7 @@ class GitIssue::Base
       opts.on("--force",      "-f", "force create branch"){ @options[:force] = true }
       opts.on("--verbose",    "-v", "show issue details"){|v| @options[:verbose] = true}
       opts.on("--max-count=VALUE", "-n=VALUE", "maximum number of issues "){|v| @options[:max_count] = v.to_i}
+      opts.on("--page=VALUE",       "-n=VALUE", "number of pages in the issues "){|v| @options[:page] = v.to_i}
       opts.on("--oneline",          "display short info"){|v| @options[:oneline] = true}
       opts.on("--raw-id",           "output ticket number only"){|v| @options[:raw_id] = true}
       opts.on("--remote=VALUE",     'on publish, remote repository to push branch ') {|v| @options[:remote] = v}
